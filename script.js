@@ -26,6 +26,7 @@ button.addEventListener("click", () => {
         score++;
         text.innerText = ("Congratulations!, You Guess the correct Number.");
         scoredata.innerText = (`Your Total attempt : ${score}`);
+        button.disabled = true;
 
     }
     else {
@@ -41,6 +42,7 @@ button.addEventListener("click", () => {
 reset.addEventListener("click", () => {
     random = parseInt(1 + Math.random() * 99);
     text.innerText = ("Enter the number : ");
+    button.disabled = false;
     userinput.value = '';
     scoredata.innerText = " ";
     score = 0;
