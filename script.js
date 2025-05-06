@@ -1,6 +1,5 @@
 //Generate the random Number.
 let random = parseInt(1 + Math.random() * 99);
-console.log(random);
 
 let score = 0;
 let reset = document.querySelector(".resetbtn");
@@ -41,7 +40,6 @@ button.addEventListener("click", () => {
 //Reset the game.
 reset.addEventListener("click", () => {
     random = parseInt(1 + Math.random() * 99);
-    console.log(random);
     text.innerText = ("Enter the number : ");
     userinput.value = '';
     scoredata.innerText = " ";
